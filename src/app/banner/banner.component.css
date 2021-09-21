@@ -1,6 +1,7 @@
 .banner{
     width: 100%;
     height: 45rem;
+    margin-top: 6rem;
     background-image: url(/app/img/adbl_IN_anon_weblab_top_desktop.jpg);
     background-repeat: no-repeat;
     background-size: cover;
