@@ -14,6 +14,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { PrimeComponent } from './prime/prime.component';
 import { CarouselComponent } from './carousel/carousel.component';
 import { CarouselCardComponent } from './carousel/carousel-card.component';
+import { HttpClientModule } from '@angular/common/http'
+import { UserInfoComponent } from './header/user-info.component';
 
 @NgModule({
   declarations: [
@@ -28,11 +30,13 @@ import { CarouselCardComponent } from './carousel/carousel-card.component';
     FreeTrialComponent,
     PrimeComponent,
     CarouselComponent,
-    CarouselCardComponent
+    CarouselCardComponent,
+    UserInfoComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
