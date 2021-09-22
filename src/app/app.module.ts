@@ -12,6 +12,8 @@ import { TopBarComponent } from './header/topbar.component';
 import { LayoutMainComponent } from './layout/layout-main.component';
 import { AppRoutingModule } from './app-routing.module';
 import { PrimeComponent } from './prime/prime.component';
+import { CarouselComponent } from './carousel/carousel.component';
+import { CarouselCardComponent } from './carousel/carousel-card.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +26,9 @@ import { PrimeComponent } from './prime/prime.component';
     SignInPageComponent,
     MemberPageComponent,
     FreeTrialComponent,
-    PrimeComponent
+    PrimeComponent,
+    CarouselComponent,
+    CarouselCardComponent
   ],
   imports: [
     BrowserModule,

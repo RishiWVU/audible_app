@@ -27,14 +27,33 @@
               "src/assets",
               "src/app/img/audible_logo.svg",
               "src/app/img/adbl_IN_anon_weblab_top_desktop.jpg",
-              "src/app/img/adbl_IN_anon_weblab_prime_dekstop.jpg"
+              "src/app/img/adbl_IN_anon_weblab_prime_dekstop.jpg",
+              "src/app/img/book1.jpeg",
+              "src/app/img/book2.jpeg",
+              "src/app/img/book3.jpeg",
+              "src/app/img/book4.jpeg",
+              "src/app/img/book5.jpeg",
+              "src/app/img/book6.jpeg",
+              "src/app/img/book7.jpeg",
+              "src/app/img/book8.jpeg",
+              "src/app/img/book9.jpeg",
+              "src/app/img/book10.jpeg",
+              "src/app/img/book11.jpeg",
+              "src/app/img/book12.jpeg",
+              "src/app/img/book13.jpeg",
+              "src/app/img/book14.jpeg",
+              "src/app/img/book15.jpeg",
+              "src/app/img/book16.jpeg",
+              "src/app/img/book17.jpeg",
+              "src/app/img/book18.jpeg"
             ],
             "styles": [
               "src/styles.css",
               "./node_modules/bootstrap/dist/css/bootstrap.css",
               "src/app/header/topbar.component.css",
               "src/app/banner/banner.component.css",
-              "src/app/prime/prime.component.css"
+              "src/app/prime/prime.component.css",
+              "src/app/carousel/carousel.component.css"
             ],
             "scripts": [
               "./node_modules/bootstrap/dist/js/bootstrap.bundle.js"

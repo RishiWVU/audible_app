@@ -1,0 +1,82 @@
+.book-store{
+    width:100;
+    height: auto;
+    margin: 2rem auto;
+}
+.carousel-item img {
+    width: 100%;
+}
+.carousel-indicators {
+    margin-bottom: -4rem;
+}
+.carousel-indicators [data-bs-target]{
+    width: 12px;
+    height: 12px;
+    background-color: #2a2d31;
+    border-radius: 50%;
+}
+.carousel-control-next-icon{
+    width: 4rem;
+    height: 9rem;
+    background-color: rgba(255,255,255,0.65);
+    margin-left: 11rem;
+}
+.carousel-control-prev-icon{
+    width: 4rem;
+    height: 9rem;
+    background-color: rgba(255,255,255,0.65);
+    margin-left: -11rem;
+}
+
+.hidden-content {
+    position: absolute;
+    transition: all 0.5s ease;
+    margin-top: 1rem;
+    left: 0;
+    background: #fff;
+    box-shadow: 0 0.8rem 1.6rem 0.8rem rgba(0,0,0,0.2);
+    z-index: 1;
+    padding: 1rem;
+    width: 44rem;
+    visibility: hidden;
+    opacity: 0;
+}
+.dropdown
+{
+    display: flex;
+}
+.dropdown .drop-item li{
+    padding: 1.2rem 1.6rem 1.2rem 2.1rem;
+    text-decoration: none;
+    display: block;
+    font-weight: 500;
+    font-size: 1.4rem;
+}
+.dropdown .drop-item li a{
+    display: block;
+    font-weight: 500;
+    font-size: 1.4rem;
+}
+.hidden-content h1{
+    font-size: 2rem;
+    margin-top: 1rem;
+    line-height: 2.6rem;
+    padding-left: 5rem;
+    color: rgba(20,20,20,0.65);
+}
+.list li:hover .hidden-content{
+    visibility: visible;
+    opacity: 1;
+}
+.list li:hover .hidden-content a:hover{
+    text-decoration: underline;
+    cursor: pointer;
+    background: none;
+}
+ul li ul li{
+    clear: both;
+    width: 100%;
+}
+
+
+

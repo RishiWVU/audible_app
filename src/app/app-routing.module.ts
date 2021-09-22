@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule,Routes } from '@angular/router';
-import { BannerComponent } from './banner/banner.component';
+import { HomePageComponent } from './body/home-page.component';
 import { FreeTrialComponent } from './body/free-trial.component';
 import { HelpPageComponent } from './body/help-page.component';
 import { MemberPageComponent } from './body/member-page.component';
@@ -8,7 +8,7 @@ import { SearchPageComponent } from './body/search-page.component';
 import { SignInPageComponent } from './body/signin-page.component';
 
 const routes: Routes= [
-  {path: 'home', component: BannerComponent},
+  {path: 'home', component: HomePageComponent},
   {path: 'free-trial', component: FreeTrialComponent},
   {path: 'help-page', component: HelpPageComponent},
   {path: 'member-page', component: MemberPageComponent},
