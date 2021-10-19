@@ -1,6 +1,7 @@
 import { Component } from "@angular/core";
 import { Carousel } from "../carousel/carousel.model";
 import { CarouselService } from "../carousel/carousel.service";
+import { DatabaseService } from "./database.service";
 
 @Component({
     selector: 'audible-edit-carousel',
@@ -9,8 +10,8 @@ import { CarouselService } from "../carousel/carousel.service";
 
 export class EditCarouselComponent{
 
-    constructor(private infoService: CarouselService) {
-
+    constructor(private infoService: CarouselService, private dbService:DatabaseService) {
+        dbService.showData();
     }
 
     onUpdateCarousel(data:Carousel){
