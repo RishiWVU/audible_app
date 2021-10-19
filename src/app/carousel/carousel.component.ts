@@ -3,22 +3,22 @@ import { Carousel } from "./carousel.model";
 import { CarouselService } from "./carousel.service";
 
 @Component({
-    selector:"audible-user-info",
-    templateUrl: "user-info.component.html"
+    selector:"audible-carousel",
+    templateUrl: "carousel.component.html"
 })
 export class CarouselComponent implements OnInit {
-    myInfo: Carousel | undefined;
+    Carousel: Carousel | undefined;
     constructor(private CarouselService:CarouselService){
    }
    ngOnInit(): void{
        console.log("Registering showUserInfo as a subscriber");
-       this.showUserInfo();
+       this.showCarouselInfo();
    }
  
-   showUserInfo(){
-       this.CarouselService.getUserInfo().subscribe((data: Carousel) => {
+   showCarouselInfo(){
+       this.CarouselService.getCarouselInfo().subscribe((data: Carousel) => {
            console.log(data);
-           this.myInfo = data;
+           this.Carousel = data;
        })
    }
 }
