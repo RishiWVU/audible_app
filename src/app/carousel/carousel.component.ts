@@ -1,18 +1,24 @@
-import { Component, Input } from "@angular/core";
+import {Component, Injectable, OnInit} from "@angular/core";
 import { Carousel } from "./carousel.model";
-import { mock_carousel } from "./mock-carousel";
+import { CarouselService } from "./carousel.service";
 
 @Component({
-    selector: "audible-carousel",
-    templateUrl:"carousel.component.html"
+    selector:"audible-user-info",
+    templateUrl: "user-info.component.html"
 })
-export class CarouselComponent{
-    
-    great_listens:Carousel[] = [];
-
-    constructor(){
-        for (var carousel of mock_carousel){
-            this.great_listens.push(new Carousel(carousel));
-        }
-    }
+export class CarouselComponent implements OnInit {
+    myInfo: Carousel | undefined;
+    constructor(private CarouselService:CarouselService){
+   }
+   ngOnInit(): void{
+       console.log("Registering showUserInfo as a subscriber");
+       this.showUserInfo();
+   }
+ 
+   showUserInfo(){
+       this.CarouselService.getUserInfo().subscribe((data: Carousel) => {
+           console.log(data);
+           this.myInfo = data;
+       })
+   }
 }
