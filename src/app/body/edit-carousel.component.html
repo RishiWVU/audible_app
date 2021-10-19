@@ -1,0 +1,22 @@
+<div class ="container">
+    <div class="row">
+        <div class="col-8">
+            <form #postForm="ngForm" (ngSubmit)="onUpdateCarousel(postForm.value)">
+                <div class="input-group">
+                    <span class="input-group-text">Author name</span>
+                    <input type="text" class="form-control" ngModel name="author">
+                  </div>
+                  <div class="input-group">
+                    <span class="input-group-text">Title</span>
+                    <input type="text" class="form-control" ngModel name="title">
+                  </div>
+
+                  <button class = "btn btn-light" type="submit">
+                      Submit
+                  </button>
+
+
+            </form>
+        </div>
+    </div>
+</div>

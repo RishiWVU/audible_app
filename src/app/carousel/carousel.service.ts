@@ -5,12 +5,17 @@ import { Carousel } from "./carousel.model";
 @Injectable({providedIn: 'root'})
 export class CarouselService{
     private baseUrl:string = 'https://audible-app-8bd6d-default-rtdb.firebaseio.com';
-    private myInfoEndpoints:string = 'carousel.json';
+    private CarouselEndpoints:string = 'carousel.json';
     constructor(private http: HttpClient){
         
     }
 
-    getUserInfo(){
-        return this.http.get<Carousel>(this.baseUrl + this. myInfoEndpoints);
+    getCarouselInfo(){
+        console.log(this.baseUrl + this. CarouselEndpoints);
+        return this.http.get<Carousel>(this.baseUrl + this. CarouselEndpoints);
+    }
+
+    modifyCarouselInfo(data:Carousel){
+        return this.http.put(this.baseUrl + this. CarouselEndpoints, data);
     }
 }

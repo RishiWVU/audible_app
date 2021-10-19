@@ -11,7 +11,7 @@ export class CarouselComponent implements OnInit {
     constructor(private CarouselService:CarouselService){
    }
    ngOnInit(): void{
-       console.log("Registering showUserInfo as a subscriber");
+       console.log("Registering showCarouselInfo as a card");
        this.showCarouselInfo();
    }
  

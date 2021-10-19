@@ -16,6 +16,8 @@ import { CarouselComponent } from './carousel/carousel.component';
 import { CarouselCardComponent } from './carousel/carousel-card.component';
 import { HttpClientModule } from '@angular/common/http'
 import { UserInfoComponent } from './header/user-info.component';
+import { EditCarouselComponent } from './body/edit-carousel.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -31,12 +33,14 @@ import { UserInfoComponent } from './header/user-info.component';
     PrimeComponent,
     CarouselComponent,
     CarouselCardComponent,
-    UserInfoComponent
+    UserInfoComponent,
+    EditCarouselComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
