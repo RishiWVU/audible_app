@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "audible-app-8bd6d": {
+      "hosting": {
+        "audible-app": [
+          "audible-app-8bd6d"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "audible-app-8bd6d"
+  }
+}

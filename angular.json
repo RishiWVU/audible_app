@@ -126,6 +126,16 @@
             ],
             "scripts": []
           }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {
+            "prerender": false,
+            "ssr": false,
+            "browserTarget": "audible-app:build:production",
+            "firebaseProject": "audible-app-8bd6d",
+            "firebaseHostingSite": "audible-app-8bd6d"
+          }
         }
       }
     }
